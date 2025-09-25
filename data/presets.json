@@ -1,0 +1,204 @@
+{
+    "presets": [
+        {
+            "name": "Basic Wave",
+            "equations": [
+                {
+                    "formula": "sin(x) + cos(y)",
+                    "color": "#00ff00"
+                }
+            ],
+            "startPosition": [0, 0, 5],
+            "environment": {
+                "skyColorTop": "#4A90E2",
+                "skyColorHorizon": "#87CEEB",
+                "sunColor": "#FFF8DC",
+                "sunIntensity": 1.0,
+                "ambientColor": "#404080",
+                "ambientIntensity": 0.3,
+                "fogColor": "#B0C4DE",
+                "fogDensity": 0.003,
+                "fogStart": 10,
+                "gamma": 2.2,
+                "timeSpeed": 0.5,
+                "timePause": false
+            }
+        },
+        {
+            "name": "Mountain Range",
+            "equations": [
+                {
+                    "formula": "sin(x*0.1)*cos(y*0.1)*10 + sin(x*0.3)*cos(y*0.3)*3",
+                    "color": "#8B4513"
+                }
+            ],
+            "startPosition": [0, 0, 15],
+            "environment": {
+                "skyColorTop": "#2E5984",
+                "skyColorHorizon": "#D2B48C",
+                "sunColor": "#FFE4B5",
+                "sunIntensity": 1.2,
+                "ambientColor": "#2F4F4F",
+                "ambientIntensity": 0.4,
+                "fogColor": "#D3D3D3",
+                "fogDensity": 0.002,
+                "fogStart": 20,
+                "gamma": 2.0,
+                "timeSpeed": 0.3,
+                "timePause": false
+            }
+        },
+        {
+            "name": "Volcanic Zone",
+            "equations": [
+                {
+                    "formula": "-sqrt(x*x + y*y)*0.1 + 5",
+                    "color": "#ff4444"
+                },
+                {
+                    "formula": "sin(sqrt(x*x + y*y)*0.5)*2",
+                    "color": "#ff8800"
+                }
+            ],
+            "startPosition": [10, 10, 8],
+            "environment": {
+                "skyColorTop": "#4B0000",
+                "skyColorHorizon": "#FF6347",
+                "sunColor": "#FF4500",
+                "sunIntensity": 1.5,
+                "ambientColor": "#8B0000",
+                "ambientIntensity": 0.5,
+                "fogColor": "#DC143C",
+                "fogDensity": 0.005,
+                "fogStart": 5,
+                "gamma": 1.8,
+                "timeSpeed": 0.8,
+                "timePause": false
+            }
+        },
+        {
+            "name": "Ripple Effect",
+            "equations": [
+                {
+                    "formula": "sin(sqrt(x*x + y*y))*5/(sqrt(x*x + y*y) + 1)",
+                    "color": "#4444ff"
+                }
+            ],
+            "startPosition": [0, 0, 10],
+            "environment": {
+                "skyColorTop": "#191970",
+                "skyColorHorizon": "#4682B4",
+                "sunColor": "#F0F8FF",
+                "sunIntensity": 0.9,
+                "ambientColor": "#000080",
+                "ambientIntensity": 0.4,
+                "fogColor": "#B0E0E6",
+                "fogDensity": 0.004,
+                "fogStart": 8,
+                "gamma": 2.4,
+                "timeSpeed": 1.0,
+                "timePause": false
+            }
+        },
+        {
+            "name": "Chessboard Terrain",
+            "equations": [
+                {
+                    "formula": "(sin(x)*sin(y) > 0) ? 3 : -3",
+                    "color": "#ffffff"
+                },
+                {
+                    "formula": "(sin(x)*sin(y) <= 0) ? 3 : -3",
+                    "color": "#000000"
+                }
+            ],
+            "startPosition": [1.5, 1.5, 8],
+            "environment": {
+                "skyColorTop": "#708090",
+                "skyColorHorizon": "#C0C0C0",
+                "sunColor": "#FFFFFF",
+                "sunIntensity": 1.3,
+                "ambientColor": "#696969",
+                "ambientIntensity": 0.6,
+                "fogColor": "#DCDCDC",
+                "fogDensity": 0.001,
+                "fogStart": 15,
+                "gamma": 2.2,
+                "timeSpeed": 0.1,
+                "timePause": false
+            }
+        },
+        {
+            "name": "Infinite Valley",
+            "equations": [
+                {
+                    "formula": "sin(x*0.2)*sin(y*0.2)*20 + cos(x*0.1)*cos(y*0.1)*10",
+                    "color": "#22aa22"
+                }
+            ],
+            "startPosition": [0, 0, 25],
+            "environment": {
+                "skyColorTop": "#228B22",
+                "skyColorHorizon": "#90EE90",
+                "sunColor": "#FFFFE0",
+                "sunIntensity": 1.1,
+                "ambientColor": "#006400",
+                "ambientIntensity": 0.3,
+                "fogColor": "#98FB98",
+                "fogDensity": 0.002,
+                "fogStart": 30,
+                "gamma": 2.1,
+                "timeSpeed": 1.0,
+                "timePause": false
+            }
+        },
+        {
+            "name": "Whirlpool",
+            "equations": [
+                {
+                    "formula": "sin(atan2(y,x)*3 + sqrt(x*x + y*y)*0.1)*3",
+                    "color": "#8844ff"
+                }
+            ],
+            "startPosition": [5, 5, 8],
+            "environment": {
+                "skyColorTop": "#4B0082",
+                "skyColorHorizon": "#9370DB",
+                "sunColor": "#E6E6FA",
+                "sunIntensity": 1.0,
+                "ambientColor": "#483D8B",
+                "ambientIntensity": 0.4,
+                "fogColor": "#DDA0DD",
+                "fogDensity": 0.006,
+                "fogStart": 6,
+                "gamma": 2.3,
+                "timeSpeed": 1.2,
+                "timePause": false
+            }
+        },
+        {
+            "name": "Fractal Mountain",
+            "equations": [
+                {
+                    "formula": "sin(x)*cos(y) + sin(x*2)*cos(y*2)*0.5 + sin(x*4)*cos(y*4)*0.25",
+                    "color": "#996633"
+                }
+            ],
+            "startPosition": [0, 0, 5],
+            "environment": {
+                "skyColorTop": "#8B4513",
+                "skyColorHorizon": "#F5DEB3",
+                "sunColor": "#FFA500",
+                "sunIntensity": 1.4,
+                "ambientColor": "#A0522D",
+                "ambientIntensity": 0.5,
+                "fogColor": "#DEB887",
+                "fogDensity": 0.003,
+                "fogStart": 12,
+                "gamma": 1.9,
+                "timeSpeed": 1.0,
+                "timePause": false
+            }
+        }
+    ]
+} 
